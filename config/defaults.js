@@ -19,24 +19,24 @@ define({
     //Default configuration settings for the application. This is where you'll define things like a bing maps key,
     //default web map, default app color theme and more. These values can be overwritten by template configuration settings and url parameters.
     "appid": "",
-    "webmap": "",
+    "webmap": "c79d9a77363e4d3489a40cc6dbc98c29",
     "oauthappid": null,
     //Group templates must support a group url parameter. This will contain the id of the group.
-    "group": "520b1bd79fa74f0f9f3d13315dab6915",
+    "group": "124a5b2a0cba471e9de1e3119acf9efb",
     //Enter the url to the proxy if needed by the application. See the 'Using the proxy page' help topic for details
     //http://developers.arcgis.com/en/javascript/jshelp/ags_proxy.html
-    "proxyurl": "proxy.ashx",
+    "proxyurl": "http://www.isovist.co.nz/proxy/proxy.ashx",
     //Example of a template specific property. If your template had several color schemes
     //you could define the default here and setup configuration settings to allow users to choose a different
     //color theme.
-    "theme": "#137DB9",
+    "theme": "#000",
     "bingKey": "", //Enter the url to your organizations bing maps key if you want to use bing basemaps
     //Defaults to arcgis.com. Set this value to your portal or organization host name.
-    "sharinghost": location.protocol + "//" + "arcgis.com",
+    "sharinghost": location.protocol + "//" + "isovistdev.maps.arcgis.com",
     "units": null,
     //If your applcation needs to edit feature layer fields set this value to true. When false the map will
     //be created with layers that are not set to editable which allows the FeatureLayer to load features optimally. 
-    "editable": false,
+    "editable": true,
     "helperServices": {
      "geometry": {
        "url": null
@@ -91,10 +91,10 @@ define({
     "showNonEditableLayers": false,
 
     "submitMessage": "Thank you! Your report has been submitted.",
-    "likeField": "NUMVOTES",
+    "likeField": "VOTES",
     "commentField": "COMMENTS",
     "usePopupConfigurationForComment":false,
-    "reportedByField": "USERID",
+    "reportedByField": "NAME",
     "locationField": "LONG_TEXT",
 
     "zoomLevel": 12,
